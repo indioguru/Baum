@@ -1,0 +1,109 @@
+.footer {
+  &_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+    .content_rights {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      font-family: suisseintl-book;
+      letter-spacing: 2px;
+      font-size: 10px;
+      a {
+        color: white;
+      }
+    }
+
+    @media (min-width: 750px) {
+      .content_rights {
+        font-size: 13px;
+      }
+    }
+
+    .content_icons {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 50%;
+      .instagram {
+        .ins {
+          width: 30px;
+          height: 30px;
+          background-image: url("/assets/footer/instagram_hover.png");
+          background-size: cover;
+        }
+      }
+
+      .facebook {
+        .fa {
+          width: 30px;
+          height: 30px;
+          background-image: url("/assets/footer/facebook_hover.png");
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+
+      .spotify {
+        .spo {
+          width: 30px;
+          height: 30px;
+          background-image: url("/assets/footer/spotify_hover.png");
+          background-size: cover;
+        }
+      }
+    }
+
+    @media (min-width: 750px) {
+      .content_icons {
+        width: 20%;
+        .instagram {
+          .ins {
+            width: 40px;
+            height: 40px;
+            background-image: url("/assets/footer/instagram.png");
+          }
+        }
+
+        .facebook {
+          .fa {
+            width: 40px;
+            height: 40px;
+            background-image: url("/assets/footer/facebook.png");
+          }
+        }
+
+        .spotify {
+          .spo {
+            width: 40px;
+            height: 40px;
+            background-image: url("/assets/footer/spotify.png");
+          }
+        }
+      }
+
+      @media (hover: hover) {
+        .content_icons {
+          .ins:hover {
+            background-image: url("/assets/footer/instagram_hover.png");
+          }
+
+          .facebook {
+            .fa:hover {
+              background-image: url("/assets/footer/facebook_hover.png");
+            }
+          }
+
+          .spotify {
+            .spo:hover {
+              background-image: url("/assets/footer/spotify_hover.png");
+            }
+          }
+        }
+      }
+    }
+  }
+}

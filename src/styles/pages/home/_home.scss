@@ -1,0 +1,22 @@
+.home {
+  .video {
+    width: 100vw;
+    height: 500px;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  @media (min-width: 750px) {
+    .video {
+      width: 50%;
+      height: 100vh;
+    }
+  }
+
+  @import "./_homeIntro.scss";
+}
