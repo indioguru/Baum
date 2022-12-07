@@ -31,7 +31,7 @@
         .ins {
           width: 30px;
           height: 30px;
-          background-image: url("/assets/footer/instagram_hover.png");
+          background-image: url("/assets/footer/instagram.png");
           background-size: cover;
         }
       }
@@ -40,7 +40,7 @@
         .fa {
           width: 30px;
           height: 30px;
-          background-image: url("/assets/footer/facebook_hover.png");
+          background-image: url("/assets/footer/facebook.png");
           background-size: contain;
           background-position: center;
           background-repeat: no-repeat;
@@ -51,7 +51,7 @@
         .spo {
           width: 30px;
           height: 30px;
-          background-image: url("/assets/footer/spotify_hover.png");
+          background-image: url("/assets/footer/spotify.png");
           background-size: cover;
         }
       }
@@ -62,6 +62,7 @@
         width: 20%;
         .instagram {
           .ins {
+            transition: .4s ease;
             width: 30px;
             height: 30px;
             background-image: url("/assets/footer/instagram.png");
@@ -70,6 +71,7 @@
 
         .facebook {
           .fa {
+            transition: .4s ease;
             width: 30px;
             height: 30px;
             background-image: url("/assets/footer/facebook.png");
@@ -78,6 +80,7 @@
 
         .spotify {
           .spo {
+            transition: .4s ease;
             width: 30px;
             height: 30px;
             background-image: url("/assets/footer/spotify.png");
@@ -88,18 +91,21 @@
       @media (hover: hover) {
         .content_icons {
           .ins:hover {
-            background-image: url("/assets/footer/instagram_hover.png");
+            transform: scale(1.15);
+            transition: .4s ease;
           }
 
           .facebook {
             .fa:hover {
-              background-image: url("/assets/footer/facebook_hover.png");
+              transform: scale(1.15);
+              transition: .4s ease;
             }
           }
 
           .spotify {
             .spo:hover {
-              background-image: url("/assets/footer/spotify_hover.png");
+              transform: scale(1.15);
+              transition: .4s ease;
             }
           }
         }

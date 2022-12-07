@@ -15,7 +15,7 @@ const HomeIntro = () => {
         <div className="content_img">
           <div className="content_iframe">
             <iframe
-              className="iframe "
+              className="iframe"
               srcDoc={`
               <style>
                   img{object-fit:cover}
@@ -24,11 +24,11 @@ const HomeIntro = () => {
                   img,span{position:absolute;width:100vw;height:100%;top:0;bottom:0;margin:auto}
                   span{height:1.5em;text-align:center;font:120px/1.5 sans-serif;color:#FF4D00;text-shadow:0 0 0.5em black}
               </style>
-              <a href=${"asdkasld"}> 
+              <a href=${"https://www.youtube.com/embed/FyzRecGr6Z4"}> 
                   <img src="/assets/7.png">
               </a>
                 `}
-              src={"asdkasld"}
+              src={"https://www.youtube.com/embed/FyzRecGr6Z4"}
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

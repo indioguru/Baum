@@ -17,12 +17,10 @@ body {
 
 @font-face {
   font-family: "suisseintl-book";
-  src: url("  /assets/fonts/ppneuemontreal-book.otf") format("truetype");
-  // url("/assets/fonts/myriadrop-bold/miriadrop-bold.eot") format("eot"),
-  // url("/assets/fonts/myriadrop-bold/miriadrop-bold.woff")
-  //   format("woff"),
-  // url("/assets/fonts/myriadrop-bold/miriadrop-bold.woff2")
-  //   format("woff2");
+  src: url("/assets/fonts/ppneuemontreal-book.otf") format("truetype"),
+    url("/assets/fonts/ppneuemontreal-book.eot") format("eot"),
+    url("/assets/fonts/ppneuemontreal-book.woff") format("woff"),
+    url("/assets/fonts/ppneuemontreal-book.woff2") format("woff2");
 }
 
 // @font-face {
