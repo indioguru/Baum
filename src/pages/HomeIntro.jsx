@@ -4,11 +4,27 @@ const HomeIntro = () => {
   return (
     <div className="home_intro">
       <div className="home_intro_container">
-        <div className="content_button">
-          <a href="#/">
-            <button>Early Birds</button>
-          </a>
+        <div className="buttons">
+          <div className="content_button">
+            <a
+              target="_blank"
+              href="https://www.entradasamarillas.com/event/baum-festival-2023"
+            >
+              <button>Entradas aquí</button>
+            </a>
+          </div>
+
+          <div className="content_button_two">
+            <a
+              target="_blank"
+              href="https://www.entradasamarillas.com/event/baum-festival-2023-compras-internacionales
+"
+            >
+              Entradas internacionales
+            </a>
+          </div>
         </div>
+
         <div className="content_header">
           <img src="/assets/baumfest.png" alt="" />
         </div>

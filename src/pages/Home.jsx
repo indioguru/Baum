@@ -1,6 +1,6 @@
 import React from "react";
 import HomeIntro from "./HomeIntro";
-import HomeLineup from "./HomeLineup";
+// import HomeLineup from "./HomeLineup";
 
 const Home = () => {
   return (
