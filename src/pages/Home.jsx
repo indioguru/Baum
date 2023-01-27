@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Loader from "../components/Loader";
 import HomeIntro from "./HomeIntro";
-// import HomeLineup from "./HomeLineup";
+import HomeTickets from "./HomeTickets";
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -18,7 +18,7 @@ const Home = () => {
       </video>
       <div className="home_container containerAll">
         {!isLoading && <HomeIntro />}
-        {/* <HomeLineup /> */}
+        <HomeTickets />
       </div>
     </div>
   );

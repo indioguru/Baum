@@ -15,12 +15,64 @@ body {
   position: relative;
 }
 
+.content_button {
+  text-align: end;
+  button {
+    box-shadow: 0px 0px 6px #ffffff;
+    border: 3px solid #ffffff;
+    opacity: 1;
+    background: transparent;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    color: white;
+    width: 200px;
+    height: 45px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-family: suisseintl-book;
+  }
+
+  @media (hover: hover) {
+    button:hover {
+      cursor: pointer;
+      background-color: #ffffff1a;
+    }
+  }
+
+  @media (min-width: 950px) {
+    padding: 0px 20px;
+    button {
+      width: 200px;
+      height: 60px;
+      font-size: 18px;
+    }
+  }
+}
+
 @font-face {
   font-family: "suisseintl-book";
   src: url("/assets/fonts/freizeit-light/freizeit-light.otf") format("truetype"),
     url("/assets/fonts/freizeit-light/freizeit-light.eot") format("eot"),
     url("/assets/fonts/freizeit-light/freizeit-light.woff") format("woff"),
     url("/assets/fonts/freizeit-light/freizeit-light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "suisseintl-regular";
+  src: url("/assets/fonts/freizeit-regular/freizeit-regular.otf")
+      format("truetype"),
+    url("/assets/fonts/freizeit-regular/freizeit-regular.eot") format("eot"),
+    url("/assets/fonts/freizeit-regular/freizeit-regular.woff") format("woff"),
+    url("/assets/fonts/freizeit-regular/freizeit-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "suisseintl-thin";
+  src: url("/assets/fonts//freizeit-thin/freizeit-thin.otf") format("truetype"),
+    url("/assets/fonts/freizeit-thin/freizeit-thin.eot") format("eot"),
+    url("/assets/fonts/freizeit-thin/freizeit-thin.woff") format("woff"),
+    url("/assets/fonts/freizeit-thin/freizeit-thin.woff2") format("woff2");
 }
 
 /* width */

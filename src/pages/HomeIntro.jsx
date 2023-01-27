@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-scroll";
 const HomeIntro = () => {
   return (
     <div className="home_intro">
@@ -54,6 +54,19 @@ const HomeIntro = () => {
             ></iframe>
           </div>
           {/* <img src="/assets/7.png" alt="img" /> */}
+
+          <p>
+            <Link
+              activeClass="active"
+              to="tickets"
+              spy={true}
+              smooth={true}
+              offset={30}
+              duration={500}
+            >
+              Entradas <img src="/assets/dflechas.png" alt="" />
+            </Link>
+          </p>
         </div>
       </div>
     </div>

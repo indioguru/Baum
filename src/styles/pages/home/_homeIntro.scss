@@ -1,8 +1,7 @@
 &_intro {
   &_container {
     .buttons {
-      padding: 40px 20px;
-
+      padding: 40px 0px;
       @media (min-width: 950px) {
         display: flex;
         justify-content: flex-end;
@@ -11,40 +10,7 @@
 
       .content_button {
         order: 1;
-      }
-    }
-    .content_button {
-      text-align: end;
-      button {
-        box-shadow: 0px 0px 6px #ffffff;
-        border: 3px solid #ffffff;
-        opacity: 1;
-        background: transparent;
-        backdrop-filter: blur(30px);
-        -webkit-backdrop-filter: blur(30px);
-        color: white;
-        width: 200px;
-        height: 45px;
-        font-size: 16px;
-        letter-spacing: 2px;
-        color: #ffffff;
-        font-family: suisseintl-book;
-      }
-
-      @media (hover: hover) {
-        button:hover {
-          cursor: pointer;
-          background-color: #ffffff1a;
-        }
-      }
-
-      @media (min-width: 950px) {
-        padding: 0px 20px;
-        button {
-          width: 200px;
-          height: 60px;
-          font-size: 18px;
-        }
+        padding: 0;
       }
     }
 
@@ -52,7 +18,6 @@
       text-align: end;
       padding-top: 10px;
       font-size: 14px;
-    
       font-family: suisseintl-book;
       letter-spacing: 2px;
 
@@ -81,6 +46,7 @@
 
       img {
         width: 200px;
+        position: relative;
       }
 
       @media (min-width: 990px) {
@@ -98,7 +64,7 @@
 
     .content_img {
       margin-top: 100px;
-      margin-bottom: 500px;
+      margin-bottom: 400px;
       position: relative;
       .content_iframe {
         .iframe {
@@ -110,11 +76,54 @@
         position: absolute;
         object-fit: cover;
       }
+
+      p {
+        color: white;
+        font-family: suisseintl-regular;
+        font-size: 20px;
+        text-align: center;
+        position: relative;
+        letter-spacing: 4px;
+        text-shadow: 0px 0px 6px #ffffff;
+
+        @media (min-width: 760px) {
+          bottom: -300px;
+          left: -200px;
+          font-size: 25px;
+        }
+
+        @media (min-width: 1200px) {
+          left: -400px;
+          bottom: -400px;
+          font-size: 40px;
+          text-shadow: unset;
+        }
+
+        img {
+          position: absolute;
+          width: 15px;
+          margin-left: 5px;
+          top: 5px;
+          @media (min-width: 760px) {
+            width: 20px;
+          }
+
+          @media (min-width: 1200px) {
+            width: 30px;
+            top: 10px;
+          }
+        }
+      }
+
+      @media (min-width: 1200px) {
+        p:hover {
+          text-shadow: 0px 0px 6px #ffffff;
+          cursor: pointer;
+        }
+      }
     }
 
     @media (min-width: 750px) {
-      .content_header {
-      }
       .content_img {
         margin-top: -180px;
         padding-bottom: 100px;
